@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>More Speed = More Money</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      sup {
+        font-size: 0.7rem
+      }
+      #fast-pages-case-studies-barackobama-com + pre {
+        display: inline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source" style="display:none;">
+
+
+
+class: center, middle
+
+# Mo’ Speed = Mo’ Money
+
+Bobby Schultz
+[@puppybits](https://twitter.com/puppybits)
+
+<div style="position:absolute; width: 100%; text-align:center; bottom: 20px; font-size: 0.7rem; margin: 0 -80px">
+  <a href="http://bit.ly/more-speed-more-money">View these slides at: bit.ly/more-speed-more-money</a>
+</div>
+
+
+
+
+
+---
+class: center, middle
+
+## Slow pages lose users and money.
+
+---
+# Fast Pages Case Studies - barackobama.com
+
+Obama’s campaign website found that faster page loads increase conversion rate 14%.<sup>([Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/))</sup>
+
+* Obama’s online fund raising earned $250 million dollars.
+
+* $250,000,000 / 14% = $35,000,000
+
+* If every donar gave the same amount, the potential lose for a slow site would be as high as $35 million dollars.
+
+---
+# Fast Pages Case Studies - bing.com
+
+Bing lost -4.3% revenue per user on slow page loads. <sup>([Bing](http://velocityconf.com/velocity2009/public/schedule/detail/8523) [sildes](http://cdn.oreillystatic.com/en/assets/1/event/29/The%20User%20and%20Business%20Impact%20of%20Server%20Delays,%20Additional%20Bytes,%20and%20HTTP%20Chunking%20in%20Web%20Search%20Presentation.pptx))</sup>
+
+---
+# Fast Pages Case Studies - Yottaa.com
+
+Yotta found that slow pages had 40% abandonment rate and 80% of users never returned. <sup>([Yottaa](http://www.yottaa.com/blog/application-optimization/marketing-web-performance-101-how-site-speed-impacts-your-metrics-))</sup>
+
+
+
+
+
+
+
+
+
+
+---
+class: center, middle
+
+# Quantifiy UX Targets
+
+---
+# Targets
+
+* Speed - How fast is fast enough?
+* Size - How much data can be loaded?
+* Type - What gives the best results?
+
+---
+# Targets
+
+* Speed - <b style="color: brown">How fast is fast enough?</b>
+* Size - How much data can be loaded?
+* Type - What gives the best results?
+
+---
+# Targets - 2 seconds
+
+* <b style="color: brown">Speed - TTI (Time to Interact) 2 seconds</b>
+* Size - How much data can be loaded?
+* Type - What gives the best results?
+
+
+Numerous case studies from Bing, Amazon, Facebook, Shopzilla, Firefox and others all talk around the same threshold. Decreasing speeds down to 2 seconds have major impact on retention and revenue. Faster than a 2 second have diminishing returns.<sup>[guypo](http://www.guypo.com/17-statistics-to-sell-web-performance-optimization/)</sup>
+
+Time to Interact the best metric to quanitify the user persepction on speed. It can be the same as Time to First Paint as long as there is usage content on the page.
+
+---
+# Targets
+
+* Speed - TTI (Time to Interact) 2 seconds
+* Size - <b style="color: brown">How much data can be loaded?</b>
+* Type - What gives the best results?
+
+---
+
+# Targets - 400KB
+
+* Speed - TTI (Time to Interact) 2 seconds
+* <b style="color: brown">Size - 400KB to render above the fold</b>
+* Type - What gives the best results?
+
+Time is relative to the user’s internet connection.
+
+In 2015 users coming from mobile connections on major web sites was between 38% to 58% depending on the content type.<sup>[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)</sup>
+3G only mobile users account for 50.3% of the users.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>
+LTE Mobile users are only on LTE 56.5% of the time.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>
+
+This means around 40% of users could be accessing your site over a 3G connection. A decent 3G connection is 0.2 Megabytes Per Second (1.6Mbps). With the 2 second threshold that provide 400KB of data total to render the page in the target.
+
+---
+
+# Targets
+
+* Speed - TTI (Time to Interact) 2 seconds
+* Size - 400KB to render above the fold
+* Type - <b style="color: brown">What gives the best results?</b>
+
+---
+
+# Targets - 63.4% of page weight is `<img>`
+
+* Speed - Time to Interact 2,000 milliseconds (2 seconds)
+* Size - 400KB
+<li>
+  <b style="color: brown">Type - Images are 63.4% (1.3MB) of the page weight</b>
+</li>
+
+In September 2015, HTTP Archive has the average site is 2.2MB (2,182KB). The largest type of resource are images, which account for 1.3MB (2.1KB). <sup>[HTTP Archive](http://httparchive.org/interesting.php)</sup>
+
+On 3G mobile connections where bandwidth is the most limited, the average site would take 11 seconds to load.
+
+![Page Weight](resize-page-weight.png)
+
+---
+
+# Real-world page loads
+
+<video src="./resize-3g-loading.mp4" style="width: 90%" onClick="javascript:this.play();" />
+
+
+
+
+
+
+
+
+---
+class: center, middle
+
+# Reduce page weight, increase reveune
+
+---
+
+# Reduce page weight, increase reveune
+
+1. Create alternate sized images.
+1. Optimize/minimize each of the images.
+1. Include the image links in your source file
+1. Select the best image using:
+  1. screen pixel density
+  1. browser viewport width
+  1. user’s current connection speed
+  1. supported image file type
+  1. browser supported features
+  1. image layout sizing.
+1. Include all image variants in your distribution folder.
+1. Profit
+
+---
+
+# Reduce page weight, increase reveune
+
+## TODO
+&lt;picture&gt;
+srcSet
+media queries
+media queries + CSS
+http client hints
+
+---
+class: center middle
+
+### Yeah that’s too much work
+
+
+
+
+
+
+
+
+
+
+---
+class: center, middle
+
+# Speed with Ease
+
+---
+
+# Speed with Ease
+
+### Resize-Image-Loader (<a href="bit.ly/resize-image">bit.ly/resize-image</a>) + </br> ResponsiveImage (<a href="bit.ly/react-image">bit.ly/react-image</a>)
+
+**Resize-Image-Loader** for Webpack will create and optimize multiple image variants and include them with your distribution folder.
+
+```bash
+npm install resize-image-loader --save-dev
+```
+
+**ResponsiveImage** component will take the multiple links, size and information and connect them together so that the browser can inteligently choose the optimal image.
+
+```bash
+bower install ResponsiveImage
+```
+
+---
+
+# Speed with Ease
+
+### Resize-Image-Loader (<a href="bit.ly/resize-image">bit.ly/resize-image</a>) + </br> ResponsiveImage (<a href="bit.ly/react-image">bit.ly/react-image</a>)
+
+```javascript
+let ResponseImage = require('ResponsiveImage');
+let image = require(`resize-image?
+  sizes[]=200w,
+  sizes[]=900w
+  !assets/img/my-image.png`);
+
+
+let MyComponent = React.createClass({
+  render(){
+    return (<ResponsiveImage src={image} />);
+  }
+});
+```
+
+---
+
+# Speed with Ease
+
+### Responsive image on 3G
+
+<video src="./resize-min.mp4" style="width: 90%" onClick="javascript:this.play();" />
+
+---
+
+# Speed with Ease
+
+<h2 class="center" style="display: flex; justify-content: center; align-items: center; height:65%">
+  That’s **X**MB less and **X** seconds faster!
+</h2>
+
+---
+class: center middle
+
+# Speed with Ease - Bonus Round
+
+![Sonic](https://media.giphy.com/media/KPRszt5AKnpxS/200.gif)
+
+---
+
+# Speed with Ease - Bonus Round
+
+"Perception" of speed is just as important actual speed.
+
+We can make the page feel faster by having a complete rendering faster. Loading a tiny inlined image and then blurring it with an SVG filter. It adds ~2KB per image. This will slow the inital render by ~0.1s but the page will feel much faster because it’s completely rendered. Once the responsive image loads, we’ll cross-fase between the two images.
+
+
+---
+
+# Speed with Ease - Bonus Round
+
+### Resize-Image-Loader (<a href="bit.ly/resize-image">bit.ly/resize-image</a>) + </br> ResponsiveImage (<a href="bit.ly/react-image">bit.ly/react-image</a>) </br>FASTER
+
+```javascript
+let ResponseImage = require('ResponsiveImage');
+let image = require(`resize-image?
+  sizes[]=200w,
+  sizes[]=900w,
+  !assets/img/my-image.png`);
+
+
+let MyComponent = React.createClass({
+  render(){
+    return (<ResponsiveImage src={image} />);
+  }
+});
+```
+---
+
+# Speed with Ease - Bonus Round
+
+### Resize-Image-Loader (<a href="bit.ly/resize-image">bit.ly/resize-image</a>) + </br> ResponsiveImage (<a href="bit.ly/react-image">bit.ly/react-image</a>) </br>FASTER
+
+```javascript
+let ResponseImage = require('ResponsiveImage');
+let image = require(`resize-image?
+  sizes[]=200w,
+  sizes[]=900w,
+  placeholder
+  !assets/img/my-image.png`);
+
+
+let MyComponent = React.createClass({
+  render(){
+    return (<ResponsiveImage src={image} />);
+  }
+});
+```
+---
+
+# Speed with Ease - Bonus Round
+
+### Placeholder image on 3G
+
+<video src="./resize-full.mp4" style="width: 90%" onClick="javascript:this.play();" />
+
+---
+<h3>
+resize-image-loader <a href="https://www.npmjs.com/package/resize-image-loader">bit.ly/resize-image</a>
+</br>
+ResponsiveImage <a href="https://github.com/ReactComponents/ResponsiveImage">bit.ly/react-image</a>
+</br>
+Megatome (Webpack + React generator) <a href="https://bit.ly/megatome">bit.ly/megatome</a>
+</h3>
+
+<h3>
+<span>Level Money is hiring. </span>
+<a href="https://levelmoney.com/jobs">levelmoney.com/jobs</a>
+</div>
+</h3>
+
+Resources:
+[HTTP Client Hints](https://github.com/igrigorik/http-client-hints)
+[Responsive Images](https://responsiveimages.org/)
+[HTTP Archive](http://httparchive.org/interesting.php)
+[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)
+[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)
+[guypo](http://www.guypo.com/17-statistics-to-sell-web-performance-optimization)
+[Yottaa](http://www.yottaa.com/blog/application-optimization/marketing-web-performance-101-how-site-speed-impacts-your-metrics-)
+[Bing](http://velocityconf.com/velocity2009/public/schedule/detail/8523)
+[Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/)
+[@puppybits](https://twitter.com/puppybits)
+
+<div style="position:absolute; width: 100%; text-align:center; bottom: 20px; font-size: 0.7rem; margin: 0 -80px">
+  <a href="http://bit.ly/more-speed-more-money">View these slides at: bit.ly/more-speed-more-money</a>
+</div>
+
+
+
+</textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
