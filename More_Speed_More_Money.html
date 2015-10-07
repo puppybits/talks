@@ -25,7 +25,7 @@
         display: flex;
       }
       img {
-        max-width:80%
+        max-width:100%
       }
       
     </style>
@@ -137,7 +137,7 @@ In 2015 users coming from mobile connections on major web sites was between 38% 
 3G only mobile users account for 50.3% of the users.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>    
 LTE Mobile users are only on LTE 56.5% of the time.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>  
 
-This means around 40% of users could be accessing your site over a 3G connection. A decent 3G connection is 0.2 Megabytes Per Second (1.6Mbps). With the 2 second threshold that provide 400KB of data total to render the page in the target.
+This means most mobile users are accessing your site over a 3G connection. A decent 3G connection is 0.2 Megabytes Per Second (1.6Mbps). With the 2 second threshold that provide 400KB of data total to render the page in the target.
 
 ---
 
@@ -159,13 +159,13 @@ This means around 40% of users could be accessing your site over a 3G connection
 
 In September 2015, HTTP Archive has the average site is 2.2MB (2,182KB). The largest type of resource are images, which account for 1.3MB (2.1KB). <sup>[HTTP Archive](http://httparchive.org/interesting.php)</sup>
    
-On 3G mobile connections where bandwidth is the most limited, the average site would take 11 seconds to load. 
+On 3G mobile connections where bandwidth is the most limited, the average site would take 11 seconds to load the page. 
 
 ![Page Weight](resize-page-weight.png)
 
 ---
 
-# Real-world page loads
+# Real-world page loads (3G)
 
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-3g-loading.mp4" style="width: 80%;" onClick="javascript:this.play();" /></div>
 
@@ -279,6 +279,18 @@ Content-DPR: 3.0
 <sup>first release will be in the upcoming Chrome 46</sup>
 
 ---
+
+# Reduce page weight, increase reveune
+
+### FLIF image format (flif.info)
+
+* New lossless image format
+* In the majority of cases FLIFs are small than JPG, PNG & WEBP
+* Responsive images in a single file
+* No patents
+* No browser support
+
+---
 class: center middle
 
 ### Yeah that’s too much work
@@ -287,7 +299,7 @@ class: center middle
 
 # Reduce page weight, increase reveune
 
-### Minified (3G)
+### Minified (3G over ngrok)
 
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-optimized-image-3g.mp4" style="width: 70%;" onClick="javascript:this.play();" /></div>
 
@@ -295,7 +307,7 @@ class: center middle
 
 # Reduce page weight, increase reveune
 
-### Minified (3G)
+### Minified (3G over ngrok)
 
 ![optimized-load-time](resize-optimized-image-3g.png)
 
@@ -353,7 +365,7 @@ let MyComponent = React.createClass({
 
 # Speed with Ease
 
-## Minified + Responsive (3G)
+## Minified + Responsive (3G over ngrok)
   
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-responsive-image-3g.mp4" style="width: 70%;" onClick="javascript:this.play();" /></div>
 
@@ -361,7 +373,7 @@ let MyComponent = React.createClass({
 
 # Speed with Ease
 
-## Responsive, Minified images over fast 3G connection
+## Minified + Responsive (3G over ngrok)
 
 ![optimized-load-time](resize-responsive-image-3g.png)
 
@@ -369,16 +381,25 @@ let MyComponent = React.createClass({
 
 # Speed with Ease
 
-<h2 class="center" style="display: flex; justify-content: center; align-items: center; height:65%"> 
-  That’s 1,746KB less data and loads 10 seconds faster!
-</h2>
+<div class="center" style="display: flex; justify-content: center; align-items: center; height:65%"> 
+  <div>
+    <h2>
+      <div>Page weight went from 2,199KB, down to 453KB.</div>
+      <div>That’s 1,746KB savings!</div>
+    </h2>
+    <h2>
+      <div>Load time went from 17s, down to 6s.</div>
+      <div>That’s 11 seconds faster!</div>
+    </h2>
+  </div>
+</div>
 
 ---
 class: center middle
 
 # Speed with Ease - Bonus Round
 
-![Sonic](https://media.giphy.com/media/KPRszt5AKnpxS/200.gif) 
+<img src="https://media.giphy.com/media/KPRszt5AKnpxS/200.gif" style="width:70%"> 
 
 ---
   
@@ -434,7 +455,8 @@ let MyComponent = React.createClass({
 ---
 
 # Speed with Ease - Bonus Round
-### Minified, Responsive w/ Placeholder image on 3G
+
+### Minified + Responsive + Placeholder (3G over ngrok)
   
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-responsive-placeholder-3g.mp4" style="width: 70%;" onClick="javascript:this.play();" /></div>
 
@@ -443,7 +465,7 @@ let MyComponent = React.createClass({
 
 # Speed with Ease - Bonus Round
 
-### Placeholder image on 3G
+### Minified + Responsive + Placeholder (3G over ngrok)
   
 ![placeholder-load-time](resize-responsive-placeholder-3g.png)
 
@@ -461,6 +483,22 @@ let MyComponent = React.createClass({
 ##### Placeholder + Responsive
 
 <img src="resize-responsive-placeholder-3g-film.png" style="max-width:100%">
+
+---
+# Don’t have Webpack?
+
+### LevelMoney’s Megatome (Webpack + React generator) 
+
+* Dynamically switchable render between the browser & NodeJS (w/o JSDom/Phantom)
+* Bring your own data/flux (we use ClojureScript).
+* React 0.13 or 0.14-rc1
+* React Router 0.13 or 1.0-rc2 w/ animateable page transitions and data fetching
+* Hot swap code (1s dev cycles w/o page reloads)
+* High-level webpack config options to dev, prod or static rendering
+* Code-splitting built-in
+* Proxy-server for any back-end service
+
+[bit.ly/megatome](https://bit.ly/megatome)
 
 ---
 <h3>
