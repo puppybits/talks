@@ -27,7 +27,7 @@
       img {
         max-width:100%
       }
-      
+
     </style>
   </head>
   <body>
@@ -36,20 +36,20 @@
 
 
 class: center, middle
-      
+
 # More Speed = More Money
 
-Bobby Schultz  
-[@puppybits](https://twitter.com/puppybits)  
+Bobby Schultz
+[@puppybits](https://twitter.com/puppybits)
 
 <div style="position:absolute; width: 100%; text-align:center; bottom: 20px; font-size: 0.7rem; margin: 0 -80px">
   <a href="http://bit.ly/more-speed-more-money">View these slides at: bit.ly/more-speed-more-money</a>
 </div>
-  
-  
-  
-  
-  
+
+
+
+
+
 ---
 class: center, middle
 
@@ -58,14 +58,14 @@ class: center, middle
 ---
 # Fast Pages Case Studies - barackobama.com
 
-### Obama’s campaign website found that faster page loads increase conversion rate 14%.<sup>([Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/))</sup>  
+### Obama’s campaign website found that faster page loads increase conversion rate 14%.<sup>([Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/))</sup>
 
-* Obama’s online fund raising earned $250 million dollars.  
+* Obama’s online fund raising earned $250 million dollars.
 
 * $250,000,000 / 14% = $35,000,000
 
-* If every donar gave the same amount, the potential lose for a slow site would be as high as $35 million dollars.  
-  
+* If every donar gave the same amount, the potential lose for a slow site would be as high as $35 million dollars.
+
 ---
 # Fast Pages Case Studies - bing.com
 
@@ -87,7 +87,7 @@ class: center, middle
 
 ---
 class: center, middle
-  
+
 # Quantifiy UX Targets
 
 ---
@@ -103,7 +103,7 @@ class: center, middle
 * Speed - <b style="color: brown">How fast is fast enough?</b>
 * Size - How much data can be loaded?
 * Type - What gives the best results?
-  
+
 ---
 # Targets - 2 seconds
 
@@ -113,7 +113,7 @@ class: center, middle
 
 
 Numerous case studies from Bing, Amazon, Facebook, Shopzilla, Firefox and others all talk around the same threshold. Decreasing speeds down to 2 seconds have major impact on retention and revenue. Faster than a 2 second have diminishing returns.<sup>[guypo](http://www.guypo.com/17-statistics-to-sell-web-performance-optimization/)</sup>
-  
+
 Time to Interact the best metric to quanitify the user persepction on speed. It can be the same as Time to First Paint as long as there is usage content on the page.
 
 ---
@@ -131,11 +131,11 @@ Time to Interact the best metric to quanitify the user persepction on speed. It 
 * <b style="color: brown">Size - 400KB to render above the fold</b>
 * Type - What gives the best results?
 
-Time is relative to the user’s internet connection. 
+Time is relative to the user’s internet connection.
 
-In 2015 users coming from mobile connections on major web sites was between 38% to 58% depending on the content type.<sup>[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)</sup>  
-3G only mobile users account for 50.3% of the users.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>    
-LTE Mobile users are only on LTE 56.5% of the time.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>  
+In 2015 users coming from mobile connections on major web sites was between 38% to 58% depending on the content type.<sup>[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)</sup>
+3G only mobile users account for 50.3% of the users.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>
+LTE Mobile users are only on LTE 56.5% of the time.<sup>[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)</sup>
 
 This means most mobile users are accessing your site over a 3G connection. A decent 3G connection is 0.2 Megabytes Per Second (1.6Mbps). With the 2 second threshold that provide 400KB of data total to render the page in the target.
 
@@ -146,9 +146,9 @@ This means most mobile users are accessing your site over a 3G connection. A dec
 * Speed - TTI (Time to Interact) 2 seconds
 * Size - 400KB to render above the fold
 * Type - <b style="color: brown">What gives the best results?</b>
- 
+
 ---
-  
+
 # Targets - 63.4% of page weight is `<img>`
 
 * Speed - Time to Interact 2,000 milliseconds (2 seconds)
@@ -158,8 +158,8 @@ This means most mobile users are accessing your site over a 3G connection. A dec
 </li>
 
 In September 2015, HTTP Archive has the average site is 2.2MB (2,182KB). The largest type of resource are images, which account for 1.3MB (2.1KB). <sup>[HTTP Archive](http://httparchive.org/interesting.php)</sup>
-   
-On 3G mobile connections where bandwidth is the most limited, the average site would take 11 seconds to load the page. 
+
+On 3G mobile connections where bandwidth is the most limited, the average site would take 11 seconds to load the page.
 
 ![Page Weight](resize-page-weight.png)
 
@@ -193,9 +193,9 @@ class: center, middle
   1. browser viewport size
   1. supported image file type
   1. user’s current connection speed
-  1. browser supported features 
+  1. browser supported features
   1. image layout sizing.
-1. Include all image variants in your distribution folder. 
+1. Include all image variants in your distribution folder.
 1. Profit
 
 ---
@@ -248,7 +248,7 @@ class: center, middle
 ```javascript
 <img src="img.jpg"
      sizes="100vw"
-     srcset="img-600px.png 600w, 
+     srcset="img-600px.png 600w,
              img-1200px.jpg 1200w">
 ```
 
@@ -257,7 +257,7 @@ class: center, middle
 # Reduce page weight, increase reveune
 
 ### HTTP Client Hints (future spec)
- 
+
 * multiple file types
 * manually accounts for pixel density, viewport size
 * fallback for old browsers
@@ -319,7 +319,7 @@ class: center middle
 
 ---
 class: center, middle
-  
+
 # Speed with Ease
 
 ---
@@ -327,8 +327,8 @@ class: center, middle
 # Speed with Ease
 
 ### Resize-Image-Loader (<a href="bit.ly/resize-image">bit.ly/resize-image</a>) + </br> ResponsiveImage (<a href="bit.ly/react-image">bit.ly/react-image</a>)
-    
-**Resize-Image-Loader** for Webpack will create and optimize multiple image variants and include them with your distribution folder.  
+
+**Resize-Image-Loader** for Webpack will create and optimize multiple image variants and include them with your distribution folder.
 
 ```bash
 npm install resize-image-loader --save-dev
@@ -358,7 +358,7 @@ let MyComponent = React.createClass({
   render(){
     return (<ResponsiveImage src={image} />);
   }
-}); 
+});
 ```
 
 ---
@@ -366,7 +366,7 @@ let MyComponent = React.createClass({
 # Speed with Ease
 
 ## Minified + Responsive (3G over ngrok)
-  
+
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-responsive-image-3g.mp4" style="width: 70%;" onClick="javascript:this.play();" /></div>
 
 ---
@@ -381,7 +381,7 @@ let MyComponent = React.createClass({
 
 # Speed with Ease
 
-<div class="center" style="display: flex; justify-content: center; align-items: center; height:65%"> 
+<div class="center" style="display: flex; justify-content: center; align-items: center; height:65%">
   <div>
     <h2>
       <div>Page weight went from 2,199KB, down to 453KB.</div>
@@ -399,13 +399,13 @@ class: center middle
 
 # Speed with Ease - Bonus Round
 
-<img src="https://media.giphy.com/media/KPRszt5AKnpxS/200.gif" style="width:70%"> 
+<img src="https://media.giphy.com/media/KPRszt5AKnpxS/200.gif" style="width:70%">
 
 ---
-  
+
 # Speed with Ease - Bonus Round
 
-### "Perception" of speed is just as important actual speed.  
+### "Perception" of speed is just as important actual speed.
 
 We can make the page feel faster by having a complete rendering faster. Loading a tiny inlined image and then blurring it with an SVG filter. It adds ~2KB per image. This will slow the initial render by ~0.1s but the page will feel much faster because it’s completely rendered. Once the responsive image loads, we’ll cross-fade between the two images.
 
@@ -428,7 +428,7 @@ let MyComponent = React.createClass({
   render(){
     return (<ResponsiveImage src={image} />);
   }
-}); 
+});
 ```
 ---
 
@@ -449,7 +449,7 @@ let MyComponent = React.createClass({
   render(){
     return (<ResponsiveImage src={image} />);
   }
-}); 
+});
 ```
 
 ---
@@ -457,7 +457,7 @@ let MyComponent = React.createClass({
 # Speed with Ease - Bonus Round
 
 ### Minified + Responsive + Placeholder (3G over ngrok)
-  
+
 <div style="display: flex; align-items: flex-start; justify-content: center;"><video src="./resize-responsive-placeholder-3g.mp4" style="width: 70%;" onClick="javascript:this.play();" /></div>
 
 
@@ -466,13 +466,13 @@ let MyComponent = React.createClass({
 # Speed with Ease - Bonus Round
 
 ### Minified + Responsive + Placeholder (3G over ngrok)
-  
+
 ![placeholder-load-time](resize-responsive-placeholder-3g.png)
 
 ---
 # Speed with Ease - Bonus Round
 
-##### Minified 
+##### Minified
 
 <img src="resize-optimized-image-3g-film.png" style="max-width:100%">
 
@@ -487,7 +487,7 @@ let MyComponent = React.createClass({
 ---
 # Don’t have Webpack?
 
-### LevelMoney’s Megatome (Webpack + React generator) 
+### LevelMoney’s Megatome (Webpack + React generator)
 
 * Dynamically switchable render between the browser & NodeJS (w/o JSDom/Phantom)
 * Bring your own data/flux (we use ClojureScript).
@@ -515,18 +515,18 @@ Megatome (Webpack + React generator) <a href="https://bit.ly/megatome">bit.ly/me
 </div>
 </h3>
 
-Resources:  
-[HTTP Client Hints](https://github.com/igrigorik/http-client-hints)  
-[Responsive Images](https://responsiveimages.org/)  
-[HTTP Archive](http://httparchive.org/interesting.php)  
-[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)   
-[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)  
-[guypo](http://www.guypo.com/17-statistics-to-sell-web-performance-optimization)    
-[Yottaa](http://www.yottaa.com/blog/application-optimization/marketing-web-performance-101-how-site-speed-impacts-your-metrics-)  
-[Bing](http://velocityconf.com/velocity2009/public/schedule/detail/8523)  
-[Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/)  
-[@puppybits](https://twitter.com/puppybits)  
-  
+Resources:
+[HTTP Client Hints](https://github.com/igrigorik/http-client-hints)
+[Responsive Images](https://responsiveimages.org/)
+[HTTP Archive](http://httparchive.org/interesting.php)
+[OpenSignal](http://opensignal.com/reports/state-of-lte/usa-q1-2014/)
+[Clickz](http://www.clickz.com/clickz/column/2388915/why-mobile-web-still-matters-in-2015)
+[guypo](http://www.guypo.com/17-statistics-to-sell-web-performance-optimization)
+[Yottaa](http://www.yottaa.com/blog/application-optimization/marketing-web-performance-101-how-site-speed-impacts-your-metrics-)
+[Bing](http://velocityconf.com/velocity2009/public/schedule/detail/8523)
+[Kyle Rush](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/)
+[@puppybits](https://twitter.com/puppybits)
+
 <div style="position:absolute; width: 100%; text-align:center; bottom: 20px; font-size: 0.7rem; margin: 0 -80px">
   <a href="http://bit.ly/more-speed-more-money">View these slides at: bit.ly/more-speed-more-money</a>
 </div>
@@ -540,14 +540,14 @@ Resources:
       var slideshow = remark.create();
     </script>
   </body>
-      <!-- 
+      <!--
       optimize image - http://www.webpagetest.org/result/151006_0G_8VA/
       responsive - http://www.webpagetest.org/result/151006_R8_97H/
       placeholder - http://www.webpagetest.org/result/151006_R8_97H/
-      
+
       responsive 3g - http://www.webpagetest.org/result/151006_67_9D7/
       placeholder 3g - http://www.webpagetest.org/result/151006_8M_9A0
       optimized - http://www.webpagetest.org/result/151006_JM_9FN
-      
+
       -->
 </html>
