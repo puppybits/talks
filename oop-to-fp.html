@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OOP -> FP</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      sup {
+        font-size: 0.7rem
+      }
+      #fast-pages-case-studies-barackobama-com + pre {
+        display: inline;
+      }
+      .remark-slide-scaler {
+        height: auto !important;
+        width: auto !important;
+        transform: scale(1) !important;
+        top: 0px !important; 
+      }
+      .remark-slide-content{
+        padding: 20px !important;
+      }
+      img {
+        width: 100%;
+      }
+      .pad {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .full {
+        height: 100vh !important;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source" style="display:none;">
+
+class: center, middle, full
+
+# OOP to FP
+#### How and why to write functionally in JS
+###### use <- and -> to navigate
+
+---
+
+class: middle, full
+
+## Functional Programming
+
+The goals of FP is:
+* Write code that's easier to understand.
+* Reuse code much better.
+* Better future proofing by using existing code for purposes that we're considered 
+at creation time.
+* Spend less time refactoring.
+* Unit tests take less time to write/manage while being more stable.
+* Be more concise with your code to rely less on comments (which easily become stable and are wrong).
+* Write code that's easier to reason about so it's harder to write bugs into your code.  
+
+
+---
+
+class: middle, full
+
+## Functional Programming
+
+Looking at the trade-offs between OOP and FP is challenging. We'll from some traditional OOP to FP. This will help us learn how to write FP code. It also give us a change to discuss why many code bases can benefit by using FP patterns.
+
+---
+<img src="imgs/01.png" />
+---
+<img src="imgs/02.png" />
+---
+<img src="imgs/03.png" />
+---
+<img src="imgs/04.png" />
+---
+<img src="imgs/05.png" />
+---
+<img src="imgs/06.png" />
+---
+<img src="imgs/07.png" />
+---
+<img src="imgs/08.png" />
+---
+<img src="imgs/09.png" />
+---
+<img src="imgs/10.png" />
+---
+<img src="imgs/11.png" />
+---
+<img src="imgs/12.png" />
+---
+<img src="imgs/13.png" />
+---
+<img src="imgs/14.png" />
+---
+<img src="imgs/15.png" />
+---
+<img src="imgs/16.png" />
+---
+<img src="imgs/17.png" />
+---
+<img src="imgs/18.png" />
+---
+<img src="imgs/19.png" />
+---
+<img src="imgs/20.png" />
+---
+<img src="imgs/21.png" />
+---
+<img src="imgs/22.png" />
+---
+<img src="imgs/23.png" />
+---
+<img src="imgs/24.png" />
+---
+<img src="imgs/25.png" />
+---
+<img src="imgs/26.png" />
+---
+<img src="imgs/27.png" />
+---
+<img src="imgs/28.png" />
+---
+<img src="imgs/29.png" />
+---
+<img src="imgs/30.png" />
+---
+<img src="imgs/31.png" />
+---
+<img src="imgs/32.png" />
+---
+<img src="imgs/33.png" />
+---
+<img src="imgs/34.png" />
+---
+<img src="imgs/35.png" />
+---
+<img src="imgs/36.png" />
+---
+<img src="imgs/37.png" />
+---
+<img src="imgs/38.png" />
+---
+<img src="imgs/39.png" />
+---
+<img src="imgs/40.png" />
+---
+<img src="imgs/41.png" />
+---
+<img src="imgs/42.png" />
+---
+<img src="imgs/43.png" />
+---
+<img src="imgs/44.png" />
+---
+<img src="imgs/45.png" />
+---
+<img src="imgs/46.png" />
+---
+<img src="imgs/47.png" />
+---
+<img src="imgs/48.png" />
+---
+<img src="imgs/49.png" />
+---
+<img src="imgs/50.png" />
+---
+<img src="imgs/51.png" />
+---
+<img src="imgs/52.png" />
+---
+<img src="imgs/53.png" />
+---
+<img src="imgs/54.png" />
+---
+
+class: middle, full
+
+## Why Functional Programming?
+1. Simple functions are easy to reuse and easy to test.
+2. Functions can be reused in ways you didn't think of 
+   when it was created.
+3. Simple functions are easy to understand. 
+4. Refactoring FP compared to OOP happens less frequently.
+5. Encapsulate dependencies so other external functions 
+   don't need to know about it. Curry more.
+
+
+## How to be Functional.
+1. Operate on a single simple object first.
+2. Compose all things.
+3. Think in terms of transforming an object from 
+   one structure to another; not step by step operations.
+4. Don't micro-optimize (don't worry about lots of 
+   little allocations). If you have bigger operations 
+   look into immutable data.
+5. Just like when thinking of class method, think about
+   a functions arguments and order. Functions with the 
+   exact same argument count (and sometimes type) can be
+   reused in order functions.
+   
+---
+class: center, middle, full
+
+# Thanks
+
+[@puppybits](https://twitter.com/puppybits)
+
+</textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
